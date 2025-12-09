@@ -31,6 +31,8 @@
 
 .header {
     padding: 62px 60px 0 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .header__container {

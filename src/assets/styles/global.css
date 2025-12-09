@@ -1,0 +1,31 @@
+:root {
+  --bckgrnd: #000;
+  --main-text: #fff;
+  --secondary-text: #BCBCBC;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bckgrnd);
+  font-family: 'Montserrat';
+  color: var(--main-text);
+  display: flex;
+  justify-content: center;
+}
+
+.section__header {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section__content {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-text);
+  line-height: 1.75rem;
+}
