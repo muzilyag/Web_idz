@@ -36,7 +36,8 @@
 }
 
 .header__container {
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
