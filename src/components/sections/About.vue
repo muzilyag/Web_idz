@@ -45,9 +45,10 @@
 .about__button {
     padding: 11px 24px;
     border-radius: 8px;
-    background-image: linear-gradient(to right, #1F8EBE, #AE61ED);
+    background-image: var(--gradient-dark);
     border: none;
     box-shadow: 0 17px 33px #FFFFFF33;
+    cursor: pointer;
 }
 
 .about__button-content {

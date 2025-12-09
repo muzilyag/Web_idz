@@ -30,13 +30,12 @@
 <style scoped>
 
 .header {
-    padding: 62px 60px 0 60px;
+    padding: 62px 120px 0 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header__container {
-    max-width: 1320px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -45,11 +44,13 @@
 .header__nav {
     display: flex;
     gap: 30px;
+    justify-content: right;
 }
 
 .nav__button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .nav__button-content {

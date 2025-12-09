@@ -13,32 +13,20 @@
     <div class="card__actions">
       <button 
         class="card__button" 
-        @click="openLink(hrenUrl)" 
         title="LinkedIn">
-        <img 
-          class="button__img" 
-          src="../../assets/images/hren.png" 
-          alt="hren'">
+        <i class="fa-brands fa-linkedin"></i>
       </button>
       
       <button 
         class="card__button" 
-        @click="openLink(twitterUrl)" 
         title="Twitter">
-        <img 
-          class="button__img" 
-          src="../../assets/images/twitter.png" 
-          alt="Twitter">
+        <i class="fa-brands fa-twitter"></i>
       </button>
       
       <button 
         class="card__button" 
-        @click="openLink(instaUrl)" 
         title="Instagram">
-        <img 
-          class="button__img" 
-          src="../../assets/images/insta.png" 
-          alt="Instagram">
+        <i class="fa-brands fa-instagram"></i>
       </button>
     </div>
   </div>
@@ -51,25 +39,13 @@ interface Props {
   name?: string;
   position?: string;
   avatar?: string;
-  hrenUrl?: string;
-  twitterUrl?: string;
-  instaUrl?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
   name: 'John Doe',
   position: 'Cofunder || CEO',
   avatar: defaultAvatar,
-  hrenUrl: '#',
-  twitterUrl: '#',
-  instaUrl: '#'
 })
-
-const openLink = (url: string) => {
-  if (url !== '#') {
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
-}
 
 </script>
 
@@ -88,6 +64,10 @@ const openLink = (url: string) => {
     border-radius: 50%;
     width: 107px;
     height: 115px;
+    box-shadow: 
+    0 0 10px #2D5981,
+    0 0 20px #2D5981,
+    0 0 30px #2D5981;
 }
 
 .card__content {
@@ -111,6 +91,34 @@ const openLink = (url: string) => {
 .card__actions {
     display: flex;
     gap: 15px;
+}
+
+.card__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1.7px solid transparent;
+    background: 
+        linear-gradient(var(--bckgrnd-card), var(--bckgrnd-card)) padding-box,
+        var(--gradient-bright) border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.card__button i {
+    font-size: 18px;
+    background: var(--gradient-bright);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card__button:hover {
+    scale: 1.1;
+    transition: all ease 0.6s;
 }
 
 </style>

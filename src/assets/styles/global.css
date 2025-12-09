@@ -3,6 +3,10 @@
   --main-text: #fff;
   --secondary-text: #BCBCBC;
   --bckgrnd-card: #131129;
+  --gradient-blue-color: #1F8EBE;
+  --gradinet-pink-color: #AE61ED;
+  --gradient-dark: linear-gradient(to right, #1F8EBE, #AE61ED);
+  --gradient-bright: linear-gradient(135deg, #3AC4FF, #AE61ED);
 }
 
 * {
