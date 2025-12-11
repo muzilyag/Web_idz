@@ -5,6 +5,7 @@
         <OurTeam/>
         <OurAdvisior/>
         <ContactUs/>
+        <Footer/>
     </main>
 </template>
 
@@ -14,4 +15,5 @@ import TextBlock from '../sections/TextBlock.vue';
 import OurTeam from '../sections/OurTeam.vue';
 import OurAdvisior from '../sections/OurAdvisior.vue';
 import ContactUs from '../sections/ContactUs.vue';
+import Footer from './Footer.vue';
 </script>
