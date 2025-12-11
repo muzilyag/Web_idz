@@ -1,6 +1,6 @@
 <template>
-    <div class="advisior-section">
-        <div class="team-section__container">
+    <div class="section">
+        <div class="section__container">
              <h1 class="section__header">
                 {{ sectionName }} <span class="gradient-text">{{gradText}}</span>
             </h1>
@@ -27,13 +27,11 @@ interface Props {
     members: Array<{id: number}>;
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  
-})
+const props = withDefaults(defineProps<Props>(), {})
 </script>
 
 <style scoped>
-.advisior-section {
+.section {
     padding: 150px 120px 0 120px;
     display: flex;
     flex-direction: column;
@@ -46,7 +44,7 @@ const props = withDefaults(defineProps<Props>(), {
     gap: 12px;
 }
 
-.team-section__container {
+.section__container {
     display: grid;
     grid-template-rows: auto auto;
     gap: 80px;
