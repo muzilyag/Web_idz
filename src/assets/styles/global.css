@@ -21,6 +21,11 @@ body {
   color: var(--main-text);
   display: flex;
   justify-content: center;
+  background-image: url(../../assets/images/shadow-background.png), 
+                    url(../../assets/images/background.png);
+  background-size: 100% 30%, 100% 30%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 0 0; 
 }
 
 .section__header {

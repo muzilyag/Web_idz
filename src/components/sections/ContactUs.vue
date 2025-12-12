@@ -59,7 +59,6 @@ import img_contact from "../../assets/images/img_contact.png"
 
 .head__input,
 .main__input {
-    max-width: 514px;
     height: 42px;
     border-radius: 5px;
     border: 3px solid transparent;
@@ -89,17 +88,6 @@ import img_contact from "../../assets/images/img_contact.png"
 .head__input::placeholder,
 .main__input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.head__input {
-    width: 514px;
-    height: 42px;
-}
-
-.main__input {
-    width: 514px;
-    height: 221px;
-    resize: none;
 }
 
 .input__button {
