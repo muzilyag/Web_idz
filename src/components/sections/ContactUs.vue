@@ -8,8 +8,8 @@
                 <h1 class="section__header">Contact Us</h1>
                 <div class="contact__input">
                     <div class="input__fields">
-                        <input type="text" class="head__input" placeholder="Заголовок"></input>
-                        <textarea class="main__input" placeholder="Основной текст"></textarea>
+                        <input type="text" class="head__input"></input>
+                        <textarea class="main__input"></textarea>
                     </div>
                     <button class="input__button input__button--content">Submit</button>
                 </div>
@@ -29,14 +29,13 @@ import img_contact from "../../assets/images/img_contact.png"
 
 .contacts__container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     gap: 163px;
 }
 
 .contacts__img {
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 
 .contacts__actions {
@@ -80,14 +79,11 @@ import img_contact from "../../assets/images/img_contact.png"
 
 .head__input:hover,
 .main__input:hover {
+    transition: all 2s ease;
     background: 
-        linear-gradient(var(--bckgrnd-card, transparent), var(--bckgrnd-card, transparent)) padding-box,
-        var(--gradient-bright) border-box;
-}
-
-.head__input::placeholder,
-.main__input::placeholder {
-    color: rgba(255, 255, 255, 0.7) !important;
+        linear-gradient(var(--bckgrnd-card, transparent), 
+                        var(--bckgrnd-card, transparent)) padding-box,
+                        var(--gradient-bright) border-box;
 }
 
 .input__button {

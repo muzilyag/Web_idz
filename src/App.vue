@@ -1,13 +1,11 @@
 <template>
   <div class="app">
-    <!-- Свечения как фон -->
     <div class="light light-1"></div>
     <div class="light light-2"></div>
     <div class="light light-3"></div>
     <div class="light light-4"></div>
     <div class="light light-5"></div>
-    
-    <!-- Основной контент -->
+
     <Header />
     <Main/>
     <Footer/>
